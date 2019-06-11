@@ -1,0 +1,616 @@
+*, *::before, *::after
+{
+    box-sizing:border-box;
+}
+
+
+html, *
+
+{
+    transition:0.4s;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+#wrapper-description
+{
+    width:100%;
+    height:100%;
+    display:none;
+    animation: kiki;
+}
+#jijiji
+{
+    animation :  .6s fade linear;
+    display:none;
+}
+
+#wrapper
+{
+    width: 100%;
+    height:100%;
+    margin:4em 3em;
+}
+
+#container-port
+{
+    width:30vw;
+    height:30vh;
+    background:url('../../site2/images/ia.jpg');
+    background-position: center;
+    background-size:cover;
+    position:relative;
+    
+
+}
+
+
+.description-port
+{
+
+   width:180px;
+   height:80px;
+    position:absolute;
+    bottom:-55px;
+    left:75%;
+    background:white;
+}
+.description-port h1
+{
+    font-family: 'Maven Pro';
+    font-weight: 800;
+    line-height: 60px;
+    text-align:center;
+    font-size:3em;
+}
+
+.description-port p
+{
+    
+    color:gray;
+    font-size:1.3em;
+    font-family: 'Maven Pro';
+}
+@keyframes fade 
+{
+   0% {
+       width:5%;  
+   }
+   10%{width:10%;}
+   20%{width:20%;}
+   30%{width:30%;}
+   40%{width:40%;}
+   100%{
+       width:100%;
+     
+   }
+}
+
+.border
+{
+    border:2px solid;
+    width:10%;
+    height:10%;
+}
+
+#trust
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------------------------------Styles s'appliquant à tous les html---------------------------- */
+
+
+#footer
+{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height:39vh;
+    background:rgba(211, 211, 211, 0.7);
+}
+
+#footer img:hover, .modal-content img:hover {
+    transform:scale(1.5);
+    filter: opacity(0.4);
+}
+
+header
+{
+    background:#fff;
+    width:100%;
+   position: sticky;
+   top:-100px;
+   transition:top .8s;
+  animation: matrix(1, 0, 0, 1, 11.94, -16.448);
+}
+
+.forme
+{
+    flex-basis: 30%;
+    width: 300px;
+    height: 300px;
+    text-align:left;
+}
+
+.forme li
+{
+    list-style-type:none;
+    padding:20px;
+}
+
+
+
+.forme a
+{
+    margin-top:50px;
+   text-decoration:none;
+   color:#FFF;
+   font-family: 'Maven pro';
+   letter-spacing: 1.4px;
+   font-weight: 500;
+   transition: .35s;
+}
+
+.forme a:hover
+{
+  font-size:1.4em;
+}
+
+
+.forme2
+{
+    color:black;
+    font-family:'Maven Pro';
+    font-size:1.2em;
+    letter-spacing:1.8px;
+    align-self: center;
+    width: 40%;
+}
+
+
+
+
+
+/* ------------------------------Début Acceuil.html---------------------------- */
+
+
+.sousmenu
+{
+    display:flex;
+    justify-content: flex-end;
+    padding:0;
+}
+
+.sousmenu li
+{
+    list-style-type:none;
+}
+
+.sousmenu a:hover
+{
+    color:rgba(163, 163, 163, 0.89);
+}
+#spacer-for-clarity
+{
+    height: 40px;
+}
+
+#spacer-for-clarity-larger
+{
+    height: 80px;
+}
+
+.sousmenu a
+{
+    text-decoration:none;
+    padding : 10px;
+    font-family : 'Maven Pro';
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    color:black;
+    text-transform: uppercase;
+}
+
+.sousmenu a:after
+{
+    content: '';
+    display:block;
+    width:0;
+    height:1px;
+    background: black ;
+    transition:  .3s;
+}
+
+.sousmenu  a:hover:after
+{
+    width:100%;
+}
+
+.sousmenu .actual::after
+{
+    content: '';
+    display: block;
+    width:100%;
+    height: 1px;
+    background: black ;
+    transition:  .3s;
+}
+
+#graphisme-webdesign-photographie
+{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+}
+#graphisme-webdesign-photographie-description
+{
+    display:flex;
+    text-align:center;
+    justify-content: space-around;
+    width:100%;
+}
+#graphisme-webdesign-photographie-description > p
+{
+    flex-basis:18%;
+    font-family: 'Maven Pro';
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+#description-personnelle
+{
+    background:url(../images/rain2.jpg);
+    background-size: cover;
+    font-weight: 900;
+    display:flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    box-shadow:4px 4px 11px gray;
+    height:auto;
+    font-size: 1.2em;
+    width:100%;
+    font-family: 'Maven Pro';
+    color:white;
+    letter-spacing: 2px;
+}
+
+.description-personnelle-section
+{
+    text-align:center;
+    flex-basis: 55%;
+}
+
+.description-contact
+{
+    text-align:center;
+    flex-basis: 50%;
+}
+
+#description-personnelle h1
+{
+    -webkit-text-stroke: 0.1px black;
+    -moz-text-stroke: 0.1px black;
+    color:white;
+}
+
+a.button
+{
+    display:inline-block;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size:14px;
+    background:white;
+    text-decoration:none;
+    color:black;
+    margin:80px 0px;
+    text-align: center;
+    padding:18px 50px;
+    transition: .8s;
+}
+
+a.button:hover
+{
+    background:black;
+    color:#FFF;
+}
+/* ------------------------------Fin Acceuil.html---------------------------- */
+
+
+
+
+
+
+
+
+
+/* ------------------------------Début Propos.html---------------------------- */
+
+#texte-personnelle-photo
+{
+    display:flex;
+    text-align:center;
+    font-family:'Maven Pro';
+    font-size: 1.2em;
+    justify-content: space-between;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-left:10%;
+    width:80%;
+}
+
+.texte
+{
+    flex-basis:44%;
+    align-self: center;
+}
+
+.reseaux-sociaux
+{
+    display:flex;
+    width:40%;
+    justify-content: space-around;
+
+}
+
+.reseaux-sociaux img
+{
+    width: 35px;
+    height : 35px;
+}
+
+#saddasadda
+{
+    display:flex;
+    justify-content: space-around;
+    font-family: 'Maven Pro';
+    width: 100%;
+    height:250px;
+}
+
+.sadda
+{
+    flex-basis:40%;
+    font-size:0.7em;
+    letter-spacing: 1.2px;
+    color:black;
+    text-align:center;
+}
+
+
+@media screen and (max-width:900px)
+    {
+    #texte-personnelle-photo{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align:center;
+    }
+
+    .texte
+    {
+        flex-basis:100%;
+        margin-bottom:100px;
+    }
+}
+
+@media screen and (max-width:550px)
+    {
+    .photo img{
+        display:none;
+    }
+
+    
+
+
+    .sousmenu
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    #graphisme-webdesign-photographie-description, #graphisme-webdesign-photographie
+    {
+        box-shadow: 4px 6px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        background: rgba(255, 255, 255, 1);
+    }
+
+
+    #graphisme-webdesign-photographie-description
+    {
+        font-size:8px;
+    }
+
+    #graphisme-webdesign-photographie img
+    {
+        width: 32px;
+        height:32px;
+    }
+
+    html
+{   background:rgba(255, 255, 255, );
+    padding:0;
+    margin:50px;
+}
+
+
+
+    #texte-personnelle-photo
+    {
+        margin-top:100px;
+    }
+    header
+    {
+        box-shadow: 4px 6px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        background: rgba(255, 255, 255, 1);
+        position: static;;
+        top:0;
+        
+    }
+    #jijiji
+    {
+        box-shadow: 4px 6px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        background: rgba(255, 255, 255, 1);
+    }
+
+    .texte
+    {
+        box-shadow: 4px 6px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        background: rgba(255,255,255,1);
+    }
+
+    #footer
+    {
+        width: auto;
+    }
+
+    .reseaux-sociaux
+    {
+        margin-bottom:100px;
+    }
+
+    #saddasadda
+    {
+        box-shadow: 4px 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        background: rgba(255, 255, 255, 1);
+    }
+
+    #saddasadda h1
+    {
+        margin-top:35%;
+    }
+
+    #description-personnelle
+    {
+        box-shadow: 20px 30px 60px rgba(0,0,0,0.16), 5px 7px 6px rgba(0,0,0,0.23);
+    }
+
+    #footer
+    {
+        box-shadow: 4px 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+}
+
+@media screen and (max-width:750px)
+        {
+        .recommandation{
+            width:40%;
+        }
+        .modal-content{
+            width:100px;
+            height: 100px;
+        }
+        #footer{
+            flex-direction:column;
+
+        }
+}
+
+@media screen and (max-width:850px)
+    {
+    .modal-content
+    {
+       width:17%;
+    }
+    .modal-content > p::before {
+    background:url('/images/photo.png');
+    }
+}
+
+/* ------------------------------Fin Propos.html---------------------------- */
+
+#myBtn
+{
+    margin-bottom:5px;
+    width:150px;
+    font-family: 'Maven Pro';
+    font-size:1.2em;
+    letter-spacing:1.2px;
+    height:65px;
+    background-color:white;
+    border:white;
+}
+
+#myBtn:hover{
+
+    cursor: pointer;
+    transition:.4s;
+    transform:scale(1.1);
+    box-shadow:1px 2px 1px;
+    background:rgba(247, 247, 247, 0.4);
+
+}
+
+.modal
+{
+     display: none;
+    position: fixed;
+    z-index: 1;
+    left: 40%;
+    top: 35%;
+    overflow: auto;
+  }
+
+  #elementToMove{
+
+    -webkit-transition: left 1s ease;
+    transition: left 1s ease;
+
+  }
+
+  /* Modal Content/Box */
+
+  .modal-content
+  {
+    border-radius: 2em;
+    color:black;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    height:250px;
+    text-align:center;
+    width: 360px; /* Could be more or less, depending on screen size */;
+    animation : myframes .25s ease-out;
+
+
+  }
+
+  @keyframes myframes
+    {
+    0% { opacity: 0; -webkit-transform: scale(0.5)};
+    100% { opacity: 1; -webkit-transform: scale(1)};
+    }
+
+
+  .modal-content:hover
+    {
+
+    }
+
+  .modal-content > p
+    {
+    margin-top:20%;
+    }
+
+  /* The Close Button */
+  .close
+  {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus
+  {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
